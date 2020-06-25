@@ -31,7 +31,7 @@
         <configuration>
           <warSourceDirectory>WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
-          <outputDirectory>/home/manoel.dantas/git/repository/Hello World/wars/</outputDirectory>
+          <outputDirectory>/Hello World/wars/</outputDirectory>
         </configuration>
       </plugin>
     </plugins>
