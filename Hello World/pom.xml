@@ -3,7 +3,7 @@
   <groupId>HelloWorld</groupId>
   <artifactId>HelloWorld</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <name>Demo</name>
   <description>Demo para Openshift</description>
   <dependencies>
