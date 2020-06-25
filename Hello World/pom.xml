@@ -37,7 +37,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.javahelps.helloworld</mainClass>
+            <mainClass>src.com.javahelps.helloworld</mainClass>
           </manifest>
         </archive>
         <outputDirectory>wars/</outputDirectory>
