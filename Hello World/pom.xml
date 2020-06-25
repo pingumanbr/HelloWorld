@@ -40,6 +40,7 @@
             <mainClass>com.javahelps.helloworld</mainClass>
           </manifest>
         </archive>
+        <outputDirectory>wars/</outputDirectory>
       </configuration>
     </plugin>
       <plugin>
