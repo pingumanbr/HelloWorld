@@ -37,7 +37,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass></mainClass>
+            <mainClass>com.javahelps.helloworld.</mainClass>
           </manifest>
         </archive>
       </configuration>
