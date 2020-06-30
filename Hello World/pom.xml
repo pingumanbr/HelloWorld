@@ -33,9 +33,10 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>2.6</version>
         <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
+          <warSourceDirectory>Hello World/WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
-          <outputDirectory>wars/</outputDirectory>
+          <outputDirectory>target</outputDirectory>
+          <warName>ROOT</warName>
         </configuration>
       </plugin>
       
