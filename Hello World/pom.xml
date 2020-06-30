@@ -3,8 +3,8 @@
   <groupId>HelloWorld</groupId>
   <artifactId>HelloWorld</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-  <name>Demo</name>
+  <packaging>war</packaging>
+  <name>HelloWorld</name>
   <description>Demo para Openshift</description>
   <dependencies>
   <dependency>
@@ -16,6 +16,7 @@
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <finalName>HelloWorld</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -27,21 +28,7 @@
         </archive>
         </configuration>
       </plugin>
-      <plugin>
-      <!-- Build an executable JAR -->
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-jar-plugin</artifactId>
-      <version>3.1.0</version>
-      <configuration>
-        <archive>
-          <manifest>
-            <addClasspath>true</addClasspath>
-            <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>HelloWorldServlet</mainClass>
-          </manifest>
-        </archive>
-      </configuration>
-    </plugin>
+  
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>2.6</version>
@@ -51,6 +38,7 @@
           <outputDirectory>wars/</outputDirectory>
         </configuration>
       </plugin>
+      
     </plugins>
   </build>
 </project>
