@@ -52,7 +52,7 @@ public class HelloWorldServlet extends HttpServlet {
  
         out.write("remoteAddr = ");
         out.write(remoteAddr);
-        out.write("n");
+        out.write("\n");
         out.write("remoteHost = ");
         out.write(remoteHost);
  
