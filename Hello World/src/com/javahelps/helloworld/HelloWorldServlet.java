@@ -43,6 +43,20 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.print("<html><body><h1 align='center'>" +
         new Date().toString() + "</h1></body></html>");
+        
+        // client's IP address
+        String remoteAddr = req.getRemoteAddr();
+ 
+        // client's hostname
+        String remoteHost = req.getRemoteHost();
+ 
+        out.write("remoteAddr = ");
+        out.write(remoteAddr);
+        out.write("n");
+        out.write("remoteHost = ");
+        out.write(remoteHost);
+ 
+        out.close();
     }
 
     /**
