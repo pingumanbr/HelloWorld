@@ -28,13 +28,14 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/saytime")
 public class HelloWorldServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-      
+    public InetAddress inetAddress = null;
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
     public HelloWorldServlet() {
         super();
-        InetAddress inetAddress = InetAddress. getLocalHost();
+        inetAddress = InetAddress. getLocalHost();
     }
 
     /**
