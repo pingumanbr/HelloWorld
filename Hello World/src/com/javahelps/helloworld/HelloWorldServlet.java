@@ -34,7 +34,7 @@ public class HelloWorldServlet extends HttpServlet {
      */
     public HelloWorldServlet() {
         super();
-        // TODO Auto-generated constructor stub
+        InetAddress inetAddress = InetAddress. getLocalHost();
     }
 
     /**
@@ -45,7 +45,7 @@ public class HelloWorldServlet extends HttpServlet {
         out.print("<html><body><h1 align='center'>" +
         new Date().toString() + "</h1></body></html>");
         
-        InetAddress inetAddress = InetAddress. getLocalHost();
+        
         out.write("IP Address:- " + inetAddress. getHostAddress());
         out.write("\n\n");
         out.write("Host Name:- " + inetAddress. getHostName());
