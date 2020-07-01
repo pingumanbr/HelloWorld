@@ -25,8 +25,9 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorldServlet
  */
-@WebServlet("/saytime")
 public InetAddress inetAddress = null;
+
+@WebServlet("/saytime")
 public class HelloWorldServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     
