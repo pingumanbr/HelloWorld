@@ -51,7 +51,7 @@ public class HelloWorldServlet extends HttpServlet {
         out.write("Host Name:- " + inetAddress. getHostName());
         
  
-        out.close();
+        //out.close();
     }
 
     /**
