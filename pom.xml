@@ -38,7 +38,8 @@
           <warSourceDirectory>Hello World/WebContent</warSourceDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
           <outputDirectory>target</outputDirectory>
-          <warName>ROOT</warName>
+          <version>0.0.1-SNAPSHOT</version>
+          <warName>HelloWorld</warName>
         </configuration>
       </plugin>
     </plugins>
