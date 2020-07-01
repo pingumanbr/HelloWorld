@@ -26,16 +26,17 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class HelloWorldServlet
  */
 @WebServlet("/saytime")
+public InetAddress inetAddress = null;
 public class HelloWorldServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    public InetAddress inetAddress = null;
+    
     
     /**
      * @see HttpServlet#HttpServlet()
      */
     public HelloWorldServlet() {
         super();
-        inetAddress = InetAddress. getLocalHost();
+        inetAddress = InetAddress.getLocalHost();
     }
 
     /**
