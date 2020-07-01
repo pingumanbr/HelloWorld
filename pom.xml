@@ -4,7 +4,7 @@
   <artifactId>HelloWorld</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>Demo</name>
+  <name>HelloWorld</name>
   <description>Demo para Openshift</description>
   <dependencies>
   <dependency>
