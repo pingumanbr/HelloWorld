@@ -45,10 +45,10 @@ public class HelloWorldServlet extends HttpServlet {
         new Date().toString() + "</h1></body></html>");
         
         // client's IP address
-        String remoteAddr = req.getRemoteAddr();
+        String remoteAddr = request.getRemoteAddr();
  
         // client's hostname
-        String remoteHost = req.getRemoteHost();
+        String remoteHost = request.getRemoteHost();
  
         out.write("remoteAddr = ");
         out.write(remoteAddr);
