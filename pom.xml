@@ -31,7 +31,16 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-      
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <warSourceDirectory>Hello World/WebContent</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <outputDirectory>target</outputDirectory>
+          <warName>ROOT</warName>
+        </configuration>
+      </plugin>     
     </plugins>
   </build>
 </project>
