@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+import java.net.InetAddress;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -44,17 +45,10 @@ public class HelloWorldServlet extends HttpServlet {
         out.print("<html><body><h1 align='center'>" +
         new Date().toString() + "</h1></body></html>");
         
-        // client's IP address
-        String remoteAddr = request.getServerAddr();
- 
-        // client's hostname
-        String remoteHost = request.getServerHost();
- 
-        out.write("serverAddr = ");
-        out.write(remoteAddr);
-        out.write("\n");
-        out.write("serverHost = ");
-        out.write(remoteHost);
+        InetAddress inetAddress = InetAddress. getLocalHost();
+        out.write("IP Address:- " + inetAddress. getHostAddress());
+        out.write("Host Name:- " + inetAddress. getHostName());
+        
  
         out.close();
     }
