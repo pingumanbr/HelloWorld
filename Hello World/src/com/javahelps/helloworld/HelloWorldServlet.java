@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorldServlet
  */
-//public InetAddress inetAddress = null;
+
 
 @WebServlet("/saytime")
 public class HelloWorldServlet extends HttpServlet {
@@ -37,7 +37,6 @@ public class HelloWorldServlet extends HttpServlet {
      */
     public HelloWorldServlet() {
         super();
-        //inetAddress = InetAddress.getLocalHost();
     }
 
     /**
@@ -48,13 +47,14 @@ public class HelloWorldServlet extends HttpServlet {
         out.print("<html><body><h1 align='center'>" +
         new Date().toString() + "</h1></body></html>");
         
-        
-        //out.write("IP Address:- " + inetAddress. getHostAddress());
-        //out.write("\n\n");
-        //out.write("Host Name:- " + inetAddress. getHostName());
+        public InetAddress inetAddress = null;
+        inetAddress = InetAddress.getLocalHost();
+        out.write("IP Address:- " + inetAddress. getHostAddress());
+        out.write("\n\n");
+        out.write("Host Name:- " + inetAddress. getHostName());
         
  
-        //out.close();
+        out.close();
     }
 
     /**
