@@ -46,9 +46,8 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.print("<html><body><h1 align='center'>" +
         new Date().toString() + "</h1></body></html>");
-        
-        public InetAddress inetAddress = null;
-        inetAddress = InetAddress.getLocalHost();
+       
+        public inetAddress = InetAddress.getLocalHost();
         out.write("IP Address:- " + inetAddress. getHostAddress());
         out.write("\n\n");
         out.write("Host Name:- " + inetAddress. getHostName());
